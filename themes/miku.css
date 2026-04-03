@@ -23,7 +23,7 @@
     /* 主色：Miku 葱绿 */
     --miku-pink: 335 85% 55%;
     /* 点缀色：洋红 (耳机/发饰) */
-    --glass-base: 255 255 255;
+    --glass-base: 0 0% 100%;
     /* 玻璃底色：纯白 */
 
     /* --- HeroUI 变量覆盖 (透明度与颜色) --- */
@@ -40,15 +40,15 @@
 
     /* 主色调应用 */
     --heroui-primary: var(--miku-cyan) !important;
-    --heroui-primary-foreground: #ffffff !important;
+    --heroui-primary-foreground: 0 0% 100% !important;
 
     /* 边框与分割线 (极细微的白色) */
-    --heroui-divider: rgba(255, 255, 255, 0.2) !important;
-    --heroui-border: rgba(255, 255, 255, 0.3) !important;
+    --heroui-divider: 0 0% 100% / 0.2 !important;
+    --heroui-border: 0 0% 100% / 0.3 !important;
 
     /* 字体颜色 (深灰，保证在亮色玻璃上的可读性) */
-    --heroui-foreground: #1a1a1a !important;
-    --heroui-foreground-500: #4a5568 !important;
+    --heroui-foreground: 0 0% 10.2% !important;
+    --heroui-foreground-500: 218 18% 35% !important;
 }
 
 /* ==================================================================
@@ -246,5 +246,5 @@ label[data-selected="true"] .bg-default {
 }
 
 label[data-selected="true"] span {
-    color: #fff !important;
+    color: hsl(0 0% 100%) !important;
 }
