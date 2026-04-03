@@ -1,5 +1,18 @@
 /* 默认-灰色背景 */
 
+.light, [data-theme="light"] {
+  --heroui-background: 0 0% 96% !important;
+  --heroui-content1: 0 0% 100% !important;
+  --heroui-content2: 240 4.76% 95.88% !important;
+  --heroui-content3: 240 5.88% 90% !important;
+  --heroui-default-50: 0 0% 100% !important;
+  --heroui-default-100: 240 4.76% 95.88% !important;
+  --heroui-default-200: 240 5.88% 90% !important;
+  --heroui-default-300: 240 4.88% 83.92% !important;
+  --heroui-default-400: 240 5.03% 64.9% !important;
+  --heroui-default: 240 5.88% 90% !important;
+}
+
 .dark, [data-theme="dark"] {
   --heroui-background: 240 5.88% 10% !important;
   --heroui-content1: 240 3.7% 15.88% !important;

@@ -1,5 +1,15 @@
 /* One Dark Pro */
 
+.light,
+[data-theme="light"] {
+  --heroui-background: 210 17% 98% !important;
+  --heroui-default: 220 14% 96% !important;
+  --heroui-default-100: 220 14% 96% !important;
+  --heroui-default-200: 220 13% 91% !important;
+  --heroui-content1: 0 0% 100% !important;
+  --heroui-content2: 220 14% 96% !important;
+}
+
 .dark,
 [data-theme="dark"] {
   --heroui-background: 216 13.16% 14.9% !important;

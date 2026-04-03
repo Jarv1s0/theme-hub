@@ -1,5 +1,15 @@
 /* Tokyo Night */
 
+.light,
+[data-theme="light"] {
+  --heroui-background: 220 33% 98% !important;
+  --heroui-default: 225 36% 94% !important;
+  --heroui-default-100: 225 36% 94% !important;
+  --heroui-default-200: 226 28% 88% !important;
+  --heroui-content1: 0 0% 100% !important;
+  --heroui-content2: 225 36% 94% !important;
+}
+
 .dark,
 [data-theme="dark"] {
   --heroui-background: 235 21% 13% !important;
