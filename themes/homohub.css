@@ -5,9 +5,9 @@
 }
 
 .side .sticky h3::after {
-    content: "Party";
+    content: "X";
     padding: 4px;
-    margin-left: calc(-5ch + 4px);
+    margin-left: -1ch;
     color: hsl(var(--heroui-primary-foreground));
     background-color: hsl(var(--heroui-primary));
     border-radius: var(--heroui-radius-small);
