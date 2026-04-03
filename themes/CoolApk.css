@@ -5,9 +5,10 @@
   display: none !important;
 }
 
-/* 背景 */
+/* 背景 - 强制去除背景图/渐变 */
 .floating-bg {
   overflow: hidden !important;
+  background-image: none !important;
 }
 
 /* 图标 */
@@ -19,46 +20,93 @@
 
 .light,
 [data-theme="light"] {
+  /* Primary Scale - CoolApk Green (#0f9d58) */
+  --heroui-primary-50: 151 83% 96% !important;
+  --heroui-primary-100: 151 83% 90% !important;
+  --heroui-primary-200: 151 83% 80% !important;
+  --heroui-primary-300: 151 83% 70% !important;
+  --heroui-primary-400: 151 83% 60% !important;
+  --heroui-primary-500: 151 83% 34% !important;
+  --heroui-primary-600: 151 83% 30% !important;
+  --heroui-primary-700: 151 83% 25% !important;
+  --heroui-primary-800: 151 83% 20% !important;
+  --heroui-primary-900: 151 83% 15% !important;
   --heroui-primary: 151 83% 34% !important;
+
+  /* Secondary Scale */
+  --heroui-secondary-50: 151 48% 96% !important;
+  --heroui-secondary-100: 151 48% 90% !important;
+  --heroui-secondary-200: 151 48% 80% !important;
+  --heroui-secondary-300: 151 48% 70% !important;
+  --heroui-secondary-400: 151 48% 60% !important;
+  --heroui-secondary-500: 151 48% 47% !important;
+  --heroui-secondary-600: 151 48% 42% !important;
+  --heroui-secondary-700: 151 48% 37% !important;
+  --heroui-secondary-800: 151 48% 32% !important;
+  --heroui-secondary-900: 151 48% 27% !important;
   --heroui-secondary: 151 48% 47% !important;
-  --heroui-box-shadow-small: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-large: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  /* 自定义变量 */
-  --custom-main-background: hsl(0, 0%, 96%);
-  --custom-side-background: linear-gradient(
-    135deg,
-    hsl(122, 20%, 95%) 30%,
-    hsl(0, 0%, 96%) 100%
-  );
+
+  --heroui-box-shadow-small: 0px 2px 8px rgba(0, 0, 0, 0.04) !important;
+  --heroui-box-shadow-medium: 0px 4px 16px rgba(0, 0, 0, 0.04) !important;
+  --heroui-box-shadow-large: 0px 8px 32px rgba(0, 0, 0, 0.04) !important;
+
+  /* 背景色设定 */
+  --custom-main-background: hsl(150, 10%, 98%);
+  --custom-side-background: hsl(150, 25%, 95%);
 }
 
 .dark,
 [data-theme="dark"] {
+  /* Primary Scale */
+  --heroui-primary-50: 151 83% 20% !important;
+  --heroui-primary-100: 151 83% 25% !important;
+  --heroui-primary-200: 151 83% 30% !important;
+  --heroui-primary-300: 151 83% 35% !important;
+  --heroui-primary-400: 151 83% 40% !important;
+  --heroui-primary-500: 151 83% 27% !important;
+  --heroui-primary-600: 151 83% 22% !important;
+  --heroui-primary-700: 151 83% 18% !important;
+  --heroui-primary-800: 151 83% 14% !important;
+  --heroui-primary-900: 151 83% 10% !important;
   --heroui-primary: 151 83% 27% !important;
+
+  /* Secondary Scale */
   --heroui-secondary: 150 43% 42% !important;
-  --heroui-box-shadow-small: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-large: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
+
+  --heroui-box-shadow-small: 0px 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --heroui-box-shadow-medium: 0px 4px 16px rgba(0, 0, 0, 0.2) !important;
+  --heroui-box-shadow-large: 0px 8px 32px rgba(0, 0, 0, 0.2) !important;
+
+  /* 深色模式背景色补全 */
+  --custom-main-background: hsl(150, 5% 8%);
+  --custom-side-background: hsl(150, 8% 12%);
 }
 
-/* 下拉菜单保持默认阴影 */
-[data-slot="content"] {
-  --heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.05),
-    0px 2px 10px 0px rgb(0 0 0 / 0.2),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-box-shadow-medium: 0px 0px 15px 0px rgb(0 0 0 / 0.06),
-    0px 2px 30px 0px rgb(0 0 0 / 0.22),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.07),
-    0px 30px 60px 0px rgb(0 0 0 / 0.26),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-hover-opacity: 0.9 !important;
+/* 强力去除渐变 - 针对侧边栏和主背景 */
+.side, 
+.side::before, 
+.side::after,
+.main,
+.main::before,
+.main::after {
+  background-image: none !important;
+  background-attachment: scroll !important;
 }
 
 .main {
-  background: var(--custom-main-background) !important;
+  background-color: var(--custom-main-background) !important;
 }
+
 .side {
-  background: var(--custom-side-background) !important;
+  background-color: var(--custom-side-background) !important;
+  /* 移除可能的边缘阴影导致的渐变视觉错觉 */
+  box-shadow: none !important; 
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important; 
+}
+
+/* 下拉菜单保持柔和阴影 */
+[data-slot="content"] {
+  --heroui-box-shadow-small: 0px 5px 15px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-medium: 0px 10px 30px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-large: 0px 20px 60px rgba(0, 0, 0, 0.1) !important;
 }

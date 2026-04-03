@@ -1,68 +1,87 @@
 /* 360 */
 
+/* 默认图标 */
 .floating-icon {
-    display: none !important;
+  display: none !important;
 }
 
+/* 背景 - 强制去除所有渐变 */
 .floating-bg {
-    overflow: hidden !important;
+  overflow: hidden !important;
+  background-image: none !important;
 }
 
+/* 图标 */
 .floating-thumb {
-    background-size: contain !important;
-    background-color: transparent !important;
-    background-image: url('https://p3.ssl.qhimg.com/t0128439c6143122bad.png') !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+  background-image: url('https://p3.ssl.qhimg.com/t0128439c6143122bad.png') !important;
 }
 
 .light,
 [data-theme="light"] {
-    --heroui-background: 113 40 96 !important;
-    --heroui-primary-50: 144 71 46 !important;
-    --heroui-primary-100: 144 71 46 !important;
-    --heroui-primary-200: 144 71 46 !important;
-    --heroui-primary-300: 144 71 46 !important;
-    --heroui-primary-400: 144 71 46 !important;
-    --heroui-primary-500: 144 71 46 !important;
-    --heroui-primary-600: 144 71 46 !important;
-    --heroui-primary-700: 144 71 46 !important;
-    --heroui-primary-800: 144 71 46 !important;
-    --heroui-primary-900: 144 71 46 !important;
-    --heroui-primary: 144 71 46 !important;
-    --heroui-secondary-50: 56 100 50 !important;
-    --heroui-secondary-100: 56 100 50 !important;
-    --heroui-secondary-200: 56 100 50 !important;
-    --heroui-secondary-300: 56 100 50 !important;
-    --heroui-secondary-400: 56 100 50 !important;
-    --heroui-secondary-500: 56 100 50 !important;
-    --heroui-secondary-600: 56 100 50 !important;
-    --heroui-secondary-700: 56 100 50 !important;
-    --heroui-secondary-800: 56 100 50 !important;
-    --heroui-secondary-900: 56 100 50 !important;
-    --heroui-secondary: 56 100 50 !important;
+  /* Primary Scale - 360 Green (#1ab631) */
+  --heroui-primary-50: 129 75% 96% !important;
+  --heroui-primary-100: 129 75% 90% !important;
+  --heroui-primary-200: 129 75% 80% !important;
+  --heroui-primary-300: 129 75% 70% !important;
+  --heroui-primary-400: 129 75% 60% !important;
+  --heroui-primary-500: 129 75% 41% !important;
+  --heroui-primary-600: 129 75% 35% !important;
+  --heroui-primary-700: 129 75% 25% !important;
+  --heroui-primary-800: 129 75% 15% !important;
+  --heroui-primary-900: 129 75% 10% !important;
+  --heroui-primary: 129 75% 41% !important;
+
+  /* Secondary Scale - 360 Gold/Yellow */
+  --heroui-secondary-50: 51 100% 96% !important;
+  --heroui-secondary-500: 51 100% 50% !important;
+  --heroui-secondary: 51 100% 50% !important;
+
+  --heroui-background: 0 0% 98% !important;
+
+  /* 背景设定 - 纯色 */
+  --custom-main-background: hsl(129, 20%, 98%);
+  --custom-side-background: hsl(129, 25%, 96%);
 }
 
 .dark,
 [data-theme="dark"] {
-    --heroui-primary-50: 145 100 33 !important;
-    --heroui-primary-100: 145 100 33 !important;
-    --heroui-primary-200: 145 100 33 !important;
-    --heroui-primary-300: 145 100 33 !important;
-    --heroui-primary-400: 145 100 33 !important;
-    --heroui-primary-500: 145 100 33 !important;
-    --heroui-primary-600: 145 100 33 !important;
-    --heroui-primary-700: 145 100 33 !important;
-    --heroui-primary-800: 145 100 33 !important;
-    --heroui-primary-900: 145 100 33 !important;
-    --heroui-primary: 145 100 33 !important;
-    --heroui-secondary-50: 56 100 50 !important;
-    --heroui-secondary-100: 56 100 50 !important;
-    --heroui-secondary-200: 56 100 50 !important;
-    --heroui-secondary-300: 56 100 50 !important;
-    --heroui-secondary-400: 56 100 50 !important;
-    --heroui-secondary-500: 56 100 50 !important;
-    --heroui-secondary-600: 56 100 50 !important;
-    --heroui-secondary-700: 56 100 50 !important;
-    --heroui-secondary-800: 56 100 50 !important;
-    --heroui-secondary-900: 56 100 50 !important;
-    --heroui-secondary: 56 100 50 !important;
+  /* Primary Scale - 360 Green Dark Mode */
+  --heroui-primary-50: 129 75% 20% !important;
+  --heroui-primary-500: 129 75% 41% !important;
+  --heroui-primary: 129 75% 41% !important;
+
+  --heroui-background: 129 10% 8% !important;
+
+  /* 深色模式背景设定 */
+  --custom-main-background: hsl(129, 8%, 8%);
+  --custom-side-background: hsl(129, 12%, 12%);
+}
+
+/* 强制去除侧边栏和主背景渐变 */
+.side, 
+.side::before, 
+.side::after,
+.main,
+.main::before,
+.main::after {
+  background-image: none !important;
+}
+
+.main {
+  background-color: var(--custom-main-background) !important;
+}
+
+.side {
+  background-color: var(--custom-side-background) !important;
+  box-shadow: none !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 下拉菜单柔和阴影 */
+[data-slot="content"] {
+  --heroui-box-shadow-small: 0px 5px 15px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-medium: 0px 10px 30px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-large: 0px 20px 60px rgba(0, 0, 0, 0.1) !important;
 }

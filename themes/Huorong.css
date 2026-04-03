@@ -5,9 +5,10 @@
   display: none !important;
 }
 
-/* 背景 */
+/* 背景 - 强制去除所有渐变 */
 .floating-bg {
   overflow: hidden !important;
+  background-image: none !important;
 }
 
 /* 图标 */
@@ -19,105 +20,71 @@
 
 .light,
 [data-theme="light"] {
-  --heroui-primary: 29 74% 58% !important;
-  --heroui-secondary: 29 74% 40% !important;
-  --heroui-content1: 31 30% 100% !important;
-  --heroui-content2: 31 30% 92% !important;
-  --heroui-content3: 31 30% 90% !important;
-  --heroui-content4: 31 30% 85% !important;
-  --heroui-default: 31 30% 85% !important;
-  --heroui-default-50: 31 30% 100% !important;
-  --heroui-default-100: 31 30% 95% !important;
-  --heroui-default-200: 31 30% 85% !important;
-  --heroui-default-300: 31 30% 80% !important;
-  --heroui-default-400: 31 30% 85% !important;
-  --heroui-default-500: 31 30% 70% !important;
-  --heroui-default-600: 31 30% 65% !important;
-  --heroui-foreground: 31 30% 35% !important;
-  --heroui-default-foreground: 31 30% 35% !important;
-  --heroui-divider-opacity: 0.1 !important;
-  --heroui-border-width-small: 1px !important;
-  --heroui-border-width-large: 1px !important;
-  --heroui-box-shadow-small: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-large: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-background: 31 20% 96% !important;
-  /* 自定义变量 */
-  --custom-primary-background: linear-gradient(
-    135deg,
-    hsl(31, 80%, 50%) 0%,
-    hsl(44, 81%, 64%) 100%
-  );
-  --custom-main-background: hsl(31, 20%, 95%);
-  --custom-side-background: linear-gradient(
-    135deg,
-    hsl(31, 85%, 80%) 0%,
-    hsl(31, 20%, 95%) 100%
-  );
+  /* Primary Scale - Huorong Orange (#ff8000) */
+  --heroui-primary-50: 30 100% 96% !important;
+  --heroui-primary-100: 30 100% 90% !important;
+  --heroui-primary-200: 30 100% 80% !important;
+  --heroui-primary-300: 30 100% 70% !important;
+  --heroui-primary-400: 30 100% 60% !important;
+  --heroui-primary-500: 30 100% 50% !important;
+  --heroui-primary-600: 30 100% 40% !important;
+  --heroui-primary-700: 30 100% 30% !important;
+  --heroui-primary-800: 30 100% 20% !important;
+  --heroui-primary-900: 30 100% 10% !important;
+  --heroui-primary: 30 100% 50% !important;
+
+  --heroui-background: 30 20% 98% !important;
+
+  /* 背景设定 - 纯色 */
+  --custom-main-background: hsl(30, 20%, 96%);
+  --custom-side-background: hsl(30, 30%, 94%);
 }
 
 .dark,
 [data-theme="dark"] {
-  --heroui-primary: 29 74% 58% !important;
-  --heroui-secondary: 29 74% 40% !important;
-  --heroui-content1: 31 30% 25% !important;
-  --heroui-content2: 31 30% 30% !important;
-  --heroui-content3: 31 30% 35% !important;
-  --heroui-content4: 31 30% 40% !important;
-  --heroui-default: 31 30% 55% !important;
-  --heroui-default-50: 31 30% 30% !important;
-  --heroui-default-100: 31 30% 35% !important;
-  --heroui-default-200: 31 30% 40% !important;
-  --heroui-default-300: 31 30% 45% !important;
-  --heroui-default-400: 31 30% 50% !important;
-  --heroui-default-500: 31 30% 55% !important;
-  --heroui-default-600: 31 30% 60% !important;
-  --heroui-foreground: 31 30% 75% !important;
-  --heroui-default-foreground: 31 30% 85% !important;
-  --heroui-divider-opacity: 0.1 !important;
-  --heroui-border-width-small: 1px !important;
-  --heroui-border-width-large: 1px !important;
-  --heroui-box-shadow-small: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-box-shadow-large: 0px 4px 10px rgba(0, 0, 0, 0.02) !important;
-  --heroui-background: 31 20% 15% !important;
-  /* 自定义变量 */
-  --custom-primary-background: linear-gradient(
-    135deg,
-    hsl(31, 80%, 50%) 0%,
-    hsl(44, 81%, 64%) 100%
-  );
-  --custom-main-background: hsl(31, 20%, 15%);
-  --custom-side-background: linear-gradient(
-    135deg,
-    hsl(31, 50%, 5%) 0%,
-    hsl(31, 20%, 15%) 100%
-  );
+  /* Primary Scale - Huorong Orange Dark Mode */
+  --heroui-primary-50: 30 100% 20% !important;
+  --heroui-primary-100: 30 100% 25% !important;
+  --heroui-primary-200: 30 100% 30% !important;
+  --heroui-primary-300: 30 100% 35% !important;
+  --heroui-primary-400: 30 100% 40% !important;
+  --heroui-primary-500: 30 100% 50% !important;
+  --heroui-primary-600: 30 100% 45% !important;
+  --heroui-primary-700: 30 100% 35% !important;
+  --heroui-primary-800: 30 100% 25% !important;
+  --heroui-primary-900: 30 100% 15% !important;
+  --heroui-primary: 30 100% 50% !important;
+
+  --heroui-background: 30 10% 8% !important;
+
+  /* 深色模式背景设定 */
+  --custom-main-background: hsl(30, 10%, 8%);
+  --custom-side-background: hsl(30, 15%, 12%);
 }
 
-/* 下拉菜单保持默认阴影 */
-[data-slot="content"] {
-  --heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.05),
-    0px 2px 10px 0px rgb(0 0 0 / 0.2),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-box-shadow-medium: 0px 0px 15px 0px rgb(0 0 0 / 0.06),
-    0px 2px 30px 0px rgb(0 0 0 / 0.22),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.07),
-    0px 30px 60px 0px rgb(0 0 0 / 0.26),
-    inset 0px 0px 1px 0px rgb(255 255 255 / 0.15) !important;
-  --heroui-hover-opacity: 0.9 !important;
+/* 强制去除侧边栏和主背景渐变 */
+.side, 
+.side::before, 
+.side::after,
+.main,
+.main::before,
+.main::after {
+  background-image: none !important;
 }
 
-.bg-primary {
-  background: var(--custom-primary-background) !important;
-}
-.bg-primary\/30 {
-  background: var(--custom-primary-background) !important;
-}
 .main {
-  background: var(--custom-main-background) !important;
+  background-color: var(--custom-main-background) !important;
 }
+
 .side {
-  background: var(--custom-side-background) !important;
+  background-color: var(--custom-side-background) !important;
+  box-shadow: none !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 下拉菜单柔和阴影 */
+[data-slot="content"] {
+  --heroui-box-shadow-small: 0px 5px 15px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-medium: 0px 10px 30px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-large: 0px 20px 60px rgba(0, 0, 0, 0.1) !important;
 }

@@ -1,29 +1,68 @@
 /* 小而美 */
 
-.dark, [data-theme="dark"] {
-    --heroui-background: 0 0 7% !important;
-    --heroui-content1: 0 0 10% !important;
-    --heroui-content2: 0 0 14% !important;
-    --heroui-content3: 0 0 18% !important;
-    --heroui-content4: 0 0 22% !important;
-    --heroui-default: 0 0 18% !important;
-    --heroui-default-50: 0 0 10% !important;
-    --heroui-default-100: 0 0 14% !important;
-    --heroui-default-200: 0 0 18% !important;
-    --heroui-default-300: 0 0 22% !important;
+.light,
+[data-theme="light"] {
+  /* Primary Scale - WeChat Green (#07c160) */
+  --heroui-primary-50: 149 93% 96% !important;
+  --heroui-primary-100: 149 93% 90% !important;
+  --heroui-primary-200: 149 93% 80% !important;
+  --heroui-primary-300: 149 93% 70% !important;
+  --heroui-primary-400: 149 93% 60% !important;
+  --heroui-primary-500: 149 93% 39% !important;
+  --heroui-primary-600: 149 93% 32% !important;
+  --heroui-primary-700: 149 93% 25% !important;
+  --heroui-primary-800: 149 93% 18% !important;
+  --heroui-primary-900: 149 93% 10% !important;
+  --heroui-primary: 149 93% 39% !important;
+
+  --heroui-background: 0 0% 98% !important;
+
+  /* 背景设定 - 纯色 */
+  --custom-main-background: hsl(0, 0%, 100%);
+  --custom-side-background: hsl(149, 15%, 97%);
+
+  --heroui-radius-small: 4px !important;
+  --heroui-radius-medium: 8px !important;
+  --heroui-radius-large: 12px !important;
 }
 
-.light, [data-theme="light"] {
-    --heroui-background: 0 0 96% !important;
+.dark,
+[data-theme="dark"] {
+  /* Primary Scale - WeChat Green Dark */
+  --heroui-primary-50: 149 93% 20% !important;
+  --heroui-primary-500: 149 93% 39% !important;
+  --heroui-primary: 149 93% 39% !important;
+
+  --heroui-background: 0 0% 7% !important;
+
+  /* 深色模式背景设定 */
+  --custom-main-background: hsl(0, 0%, 7%);
+  --custom-side-background: hsl(149, 5%, 11%);
 }
 
-html {
-    --heroui-primary: 149 93 39% !important;
-    --heroui-secondary: 209 87 51% !important;
-    --heroui-success: 149 93 39% !important;
-    --heroui-warning: 32 93 60% !important;
-    --heroui-danger: 1 92 64% !important;
-    --heroui-radius-small: 4px !important;
-    --heroui-radius-medium: 6px !important;
-    --heroui-radius-large: 8px !important;
+/* 强力去除渐变 */
+.side, 
+.side::before, 
+.side::after,
+.main,
+.main::before,
+.main::after {
+  background-image: none !important;
+}
+
+.main {
+  background-color: var(--custom-main-background) !important;
+}
+
+.side {
+  background-color: var(--custom-side-background) !important;
+  box-shadow: none !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 下拉菜单柔和阴影 */
+[data-slot="content"] {
+  --heroui-box-shadow-small: 0px 5px 15px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-medium: 0px 10px 30px rgba(0, 0, 0, 0.1) !important;
+  --heroui-box-shadow-large: 0px 20px 60px rgba(0, 0, 0, 0.1) !important;
 }
