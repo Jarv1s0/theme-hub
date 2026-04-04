@@ -7,8 +7,8 @@
 .side .sticky h3::after {
     content: "X";
     position: absolute;
-    right: -0.02em;
-    top: 50%;
+    right: -0.35em;
+    top: 55%;
     transform: translateY(-50%);
     display: inline-flex;
     align-items: center;
