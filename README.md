@@ -1,4 +1,4 @@
-## Mihomo Party 主题
+## RouteX / Mihomo Party 主题
 
 > --heroui-xxx 变量必须是hsl色值
 
