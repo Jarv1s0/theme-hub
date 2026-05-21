@@ -186,6 +186,19 @@ body,
   box-shadow: 0 0 0 2px hsl(var(--heroui-primary) / 0.18) !important;
 }
 
+button[data-slot='trigger'].bg-primary:not(:disabled):not([aria-disabled='true']):not([data-disabled='true']) {
+  background: hsl(var(--heroui-primary)) !important;
+  color: hsl(var(--heroui-primary-foreground)) !important;
+}
+
+button[data-slot='trigger'].bg-primary:not(:disabled):not([aria-disabled='true']):not([data-disabled='true']):hover {
+  background: hsl(var(--heroui-primary-600)) !important;
+}
+
+.dark button[data-slot='trigger'].bg-primary:not(:disabled):not([aria-disabled='true']):not([data-disabled='true']):hover {
+  background: hsl(var(--heroui-primary-400)) !important;
+}
+
 [data-slot='content'][role='tooltip'] {
   background: hsl(var(--heroui-content1) / 0.92) !important;
   border: 1px solid hsl(var(--heroui-default-200) / 0.62) !important;
