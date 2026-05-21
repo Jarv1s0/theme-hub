@@ -93,7 +93,9 @@ body,
 #root,
 .main {
   background:
-    linear-gradient(135deg, hsl(var(--heroui-primary) / 0.08), transparent 38%),
+    linear-gradient(180deg, hsl(0 0% 100% / 0.78), transparent 30%),
+    linear-gradient(135deg, hsl(var(--heroui-primary) / 0.075), transparent 42%),
+    linear-gradient(315deg, hsl(186 64% 72% / 0.08), transparent 46%),
     hsl(var(--heroui-background)) !important;
   color: hsl(var(--heroui-foreground)) !important;
 }
@@ -102,7 +104,9 @@ body,
 .dark #root,
 .dark .main {
   background:
-    linear-gradient(135deg, hsl(var(--heroui-primary) / 0.16), transparent 34%),
+    linear-gradient(180deg, hsl(0 0% 100% / 0.035), transparent 28%),
+    linear-gradient(135deg, hsl(var(--heroui-primary) / 0.13), transparent 38%),
+    linear-gradient(315deg, hsl(186 64% 60% / 0.08), transparent 48%),
     hsl(var(--heroui-background)) !important;
 }
 
@@ -168,16 +172,93 @@ body,
   background-color: hsl(var(--heroui-primary) / 0.08) !important;
 }
 
+.profiles-sticky > div {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.5), hsl(0 0% 100% / 0.16)),
+    hsl(var(--heroui-content1) / 0.42) !important;
+  border-color: hsl(var(--heroui-default-200) / 0.58) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.45),
+    0 10px 24px hsl(214 30% 24% / 0.08) !important;
+  backdrop-filter: blur(16px) saturate(1.12);
+}
+
+.dark .profiles-sticky > div {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.07), hsl(0 0% 100% / 0.018)),
+    hsl(var(--heroui-content1) / 0.66) !important;
+  border-color: hsl(0 0% 100% / 0.08) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.055),
+    0 12px 28px hsl(222 45% 4% / 0.24) !important;
+}
+
+[data-slot='base'].border-primary\/16 {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.36), hsl(0 0% 100% / 0.1)),
+    hsl(var(--heroui-primary) / 0.12) !important;
+  border-color: hsl(var(--heroui-primary) / 0.28) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.42),
+    0 10px 24px hsl(var(--heroui-primary) / 0.1) !important;
+}
+
+.dark [data-slot='base'].border-primary\/16 {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.06), hsl(0 0% 100% / 0.018)),
+    hsl(var(--heroui-primary) / 0.16) !important;
+  border-color: hsl(var(--heroui-primary) / 0.28) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.05),
+    0 12px 28px hsl(222 45% 4% / 0.24) !important;
+}
+
+[data-slot='base'].border-white\/14 {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.34), hsl(0 0% 100% / 0.08)),
+    hsl(var(--heroui-content1) / 0.56) !important;
+  border-color: hsl(var(--heroui-default-200) / 0.56) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.32),
+    0 8px 20px hsl(214 30% 24% / 0.065) !important;
+}
+
+[data-slot='base'].border-white\/14:hover {
+  border-color: hsl(var(--heroui-primary) / 0.26) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.38),
+    0 10px 24px hsl(214 30% 24% / 0.09) !important;
+}
+
+.dark [data-slot='base'].border-white\/14 {
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.055), hsl(0 0% 100% / 0.014)),
+    hsl(var(--heroui-content1) / 0.62) !important;
+  border-color: hsl(0 0% 100% / 0.075) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.045),
+    0 10px 24px hsl(222 45% 4% / 0.2) !important;
+}
+
+.dark [data-slot='base'].border-white\/14:hover {
+  border-color: hsl(var(--heroui-primary) / 0.22) !important;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.06),
+    0 12px 28px hsl(222 45% 4% / 0.28) !important;
+}
+
 [data-slot='input-wrapper'],
 [data-slot='trigger'] {
-  background: hsl(var(--heroui-default-100) / 0.7) !important;
+  background: hsl(var(--heroui-content1) / 0.56) !important;
   border-color: hsl(var(--heroui-default-200) / 0.62) !important;
+  box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.25) !important;
 }
 
 .dark [data-slot='input-wrapper'],
 .dark [data-slot='trigger'] {
-  background: hsl(var(--heroui-content2) / 0.62) !important;
+  background: hsl(var(--heroui-content2) / 0.58) !important;
   border-color: hsl(0 0% 100% / 0.08) !important;
+  box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.035) !important;
 }
 
 [data-slot='input-wrapper']:focus-within,
