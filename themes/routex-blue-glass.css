@@ -146,8 +146,6 @@ body,
     0 10px 26px hsl(222 45% 4% / 0.22) !important;
 }
 
-.profile-card,
-.rule-card,
 .sysproxy-card,
 .tun-card {
   background: hsl(var(--heroui-content1) / 0.58) !important;
@@ -155,8 +153,6 @@ body,
   box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.26);
 }
 
-.dark .profile-card,
-.dark .rule-card,
 .dark .sysproxy-card,
 .dark .tun-card {
   background: hsl(var(--heroui-content2) / 0.38) !important;
@@ -164,8 +160,6 @@ body,
   box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.04);
 }
 
-.profile-card:hover,
-.rule-card:hover,
 .sysproxy-card:hover,
 .tun-card:hover,
 .proxy-card [data-slot='base']:hover,
