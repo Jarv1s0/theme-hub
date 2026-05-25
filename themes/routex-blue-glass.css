@@ -334,7 +334,7 @@ body,
 }
 
 [data-slot='input-wrapper'],
-[data-slot='trigger'] {
+button[data-slot='trigger'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.38), hsl(0 0% 100% / 0.1)),
     hsl(var(--heroui-default-100) / 0.92) !important;
@@ -345,7 +345,7 @@ body,
 }
 
 .dark [data-slot='input-wrapper'],
-.dark [data-slot='trigger'] {
+.dark button[data-slot='trigger'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.055), hsl(0 0% 100% / 0.016)),
     hsl(var(--heroui-content2) / 0.68) !important;
@@ -356,7 +356,7 @@ body,
 }
 
 [data-slot='input-wrapper']:focus-within,
-[data-slot='trigger'][data-open='true'] {
+button[data-slot='trigger'][data-open='true'] {
   border-color: hsl(var(--heroui-primary) / 0.62) !important;
   box-shadow: 0 0 0 2px hsl(var(--heroui-primary) / 0.18) !important;
 }
