@@ -34,42 +34,8 @@
   --heroui-primary-foreground: 0 0% 100%;
   --heroui-focus: 205 88% 46%;
 
-  --heroui-success-50: 164 64% 96%;
-  --heroui-success-100: 164 64% 90%;
-  --heroui-success-200: 164 64% 80%;
-  --heroui-success-300: 164 64% 70%;
-  --heroui-success-400: 164 64% 50%;
-  --heroui-success-500: 164 64% 45%;
-  --heroui-success-600: 164 64% 38%;
-  --heroui-success-700: 164 64% 30%;
-  --heroui-success-800: 164 64% 20%;
-  --heroui-success-900: 164 64% 10%;
   --heroui-success: 164 64% 38%;
-  --heroui-success-foreground: 0 0% 100%;
-
-  --heroui-warning-50: 38 86% 96%;
-  --heroui-warning-100: 38 86% 90%;
-  --heroui-warning-200: 38 86% 80%;
-  --heroui-warning-300: 38 86% 70%;
-  --heroui-warning-400: 38 86% 60%;
-  --heroui-warning-500: 38 86% 50%;
-  --heroui-warning-600: 38 86% 40%;
-  --heroui-warning-700: 38 86% 30%;
-  --heroui-warning-800: 38 86% 20%;
-  --heroui-warning-900: 38 86% 10%;
   --heroui-warning: 38 86% 50%;
-  --heroui-warning-foreground: 0 0% 0%;
-
-  --heroui-danger-50: 4 58% 96%;
-  --heroui-danger-100: 4 58% 90%;
-  --heroui-danger-200: 4 58% 80%;
-  --heroui-danger-300: 4 58% 70%;
-  --heroui-danger-400: 4 58% 60%;
-  --heroui-danger-500: 4 58% 52%;
-  --heroui-danger-600: 4 58% 45%;
-  --heroui-danger-700: 4 58% 35%;
-  --heroui-danger-800: 4 58% 25%;
-  --heroui-danger-900: 4 58% 15%;
   --heroui-danger: 4 58% 52%;
   --heroui-danger-foreground: 0 0% 100%;
 
@@ -110,42 +76,8 @@
   --heroui-primary-foreground: 222 36% 9%;
   --heroui-focus: 204 88% 58%;
 
-  --heroui-success-50: 166 58% 10%;
-  --heroui-success-100: 166 58% 15%;
-  --heroui-success-200: 166 58% 25%;
-  --heroui-success-300: 166 58% 35%;
-  --heroui-success-400: 166 58% 45%;
-  --heroui-success-500: 166 58% 48%;
-  --heroui-success-600: 166 58% 55%;
-  --heroui-success-700: 166 58% 65%;
-  --heroui-success-800: 166 58% 75%;
-  --heroui-success-900: 166 58% 85%;
   --heroui-success: 166 58% 48%;
-  --heroui-success-foreground: 0 0% 0%;
-
-  --heroui-warning-50: 40 82% 10%;
-  --heroui-warning-100: 40 82% 15%;
-  --heroui-warning-200: 40 82% 25%;
-  --heroui-warning-300: 40 82% 35%;
-  --heroui-warning-400: 40 82% 45%;
-  --heroui-warning-500: 40 82% 58%;
-  --heroui-warning-600: 40 82% 65%;
-  --heroui-warning-700: 40 82% 75%;
-  --heroui-warning-800: 40 82% 85%;
-  --heroui-warning-900: 40 82% 95%;
   --heroui-warning: 40 82% 58%;
-  --heroui-warning-foreground: 0 0% 0%;
-
-  --heroui-danger-50: 4 42% 10%;
-  --heroui-danger-100: 4 42% 15%;
-  --heroui-danger-200: 4 42% 25%;
-  --heroui-danger-300: 4 42% 35%;
-  --heroui-danger-400: 4 42% 45%;
-  --heroui-danger-500: 4 42% 58%;
-  --heroui-danger-600: 4 42% 65%;
-  --heroui-danger-700: 4 42% 75%;
-  --heroui-danger-800: 4 42% 85%;
-  --heroui-danger-900: 4 42% 95%;
   --heroui-danger: 4 42% 58%;
   --heroui-danger-foreground: 0 0% 98%;
 
@@ -196,8 +128,8 @@ body,
   box-shadow: 0 0 12px hsl(var(--heroui-primary) / 0.32) !important;
 }
 
-.proxy-card > [data-slot='base'],
-.conn-card > [data-slot='base'] {
+.proxy-card [data-slot='base'],
+.conn-card [data-slot='base'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.34), hsl(0 0% 100% / 0.08)),
     hsl(var(--heroui-content1) / 0.74) !important;
@@ -207,8 +139,8 @@ body,
     0 8px 22px hsl(214 30% 24% / 0.08) !important;
 }
 
-.dark .proxy-card > [data-slot='base'],
-.dark .conn-card > [data-slot='base'] {
+.dark .proxy-card [data-slot='base'],
+.dark .conn-card [data-slot='base'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.07), hsl(0 0% 100% / 0.02)),
     hsl(var(--heroui-content1) / 0.72) !important;
@@ -234,8 +166,8 @@ body,
 
 .sysproxy-card:hover,
 .tun-card:hover,
-.proxy-card > [data-slot='base']:hover,
-.conn-card > [data-slot='base']:hover {
+.proxy-card [data-slot='base']:hover,
+.conn-card [data-slot='base']:hover {
   border-color: hsl(var(--heroui-primary) / 0.3) !important;
   background-color: hsl(var(--heroui-primary) / 0.08) !important;
 }
@@ -261,10 +193,7 @@ body,
     0 12px 28px hsl(222 45% 4% / 0.24) !important;
 }
 
-.profile-card > [data-slot='base'].border-primary\/16,
-.rule-card > [data-slot='base'].border-primary\/16,
-.proxy-card > [data-slot='base'].border-primary\/16,
-.conn-card > [data-slot='base'].border-primary\/16 {
+[data-slot='base'].border-primary\/16 {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.36), hsl(0 0% 100% / 0.1)),
     hsl(var(--heroui-primary) / 0.12) !important;
@@ -274,10 +203,7 @@ body,
     0 10px 24px hsl(var(--heroui-primary) / 0.1) !important;
 }
 
-.dark .profile-card > [data-slot='base'].border-primary\/16,
-.dark .rule-card > [data-slot='base'].border-primary\/16,
-.dark .proxy-card > [data-slot='base'].border-primary\/16,
-.dark .conn-card > [data-slot='base'].border-primary\/16 {
+.dark [data-slot='base'].border-primary\/16 {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.06), hsl(0 0% 100% / 0.018)),
     hsl(var(--heroui-primary) / 0.16) !important;
@@ -287,10 +213,7 @@ body,
     0 12px 28px hsl(222 45% 4% / 0.24) !important;
 }
 
-.profile-card > [data-slot='base'].border-white\/14,
-.rule-card > [data-slot='base'].border-white\/14,
-.proxy-card > [data-slot='base'].border-white\/14,
-.conn-card > [data-slot='base'].border-white\/14 {
+[data-slot='base'].border-white\/14 {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.34), hsl(0 0% 100% / 0.08)),
     hsl(var(--heroui-content1) / 0.56) !important;
@@ -300,20 +223,14 @@ body,
     0 8px 20px hsl(214 30% 24% / 0.065) !important;
 }
 
-.profile-card > [data-slot='base'].border-white\/14:hover,
-.rule-card > [data-slot='base'].border-white\/14:hover,
-.proxy-card > [data-slot='base'].border-white\/14:hover,
-.conn-card > [data-slot='base'].border-white\/14:hover {
+[data-slot='base'].border-white\/14:hover {
   border-color: hsl(var(--heroui-primary) / 0.26) !important;
   box-shadow:
     inset 0 1px 0 hsl(0 0% 100% / 0.38),
     0 10px 24px hsl(214 30% 24% / 0.09) !important;
 }
 
-.dark .profile-card > [data-slot='base'].border-white\/14,
-.dark .rule-card > [data-slot='base'].border-white\/14,
-.dark .proxy-card > [data-slot='base'].border-white\/14,
-.dark .conn-card > [data-slot='base'].border-white\/14 {
+.dark [data-slot='base'].border-white\/14 {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.055), hsl(0 0% 100% / 0.014)),
     hsl(var(--heroui-content1) / 0.62) !important;
@@ -323,10 +240,7 @@ body,
     0 10px 24px hsl(222 45% 4% / 0.2) !important;
 }
 
-.dark .profile-card > [data-slot='base'].border-white\/14:hover,
-.dark .rule-card > [data-slot='base'].border-white\/14:hover,
-.dark .proxy-card > [data-slot='base'].border-white\/14:hover,
-.dark .conn-card > [data-slot='base'].border-white\/14:hover {
+.dark [data-slot='base'].border-white\/14:hover {
   border-color: hsl(var(--heroui-primary) / 0.22) !important;
   box-shadow:
     inset 0 1px 0 hsl(0 0% 100% / 0.06),
@@ -334,7 +248,7 @@ body,
 }
 
 [data-slot='input-wrapper'],
-button[data-slot='trigger'] {
+[data-slot='trigger'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.38), hsl(0 0% 100% / 0.1)),
     hsl(var(--heroui-default-100) / 0.92) !important;
@@ -345,7 +259,7 @@ button[data-slot='trigger'] {
 }
 
 .dark [data-slot='input-wrapper'],
-.dark button[data-slot='trigger'] {
+.dark [data-slot='trigger'] {
   background:
     linear-gradient(180deg, hsl(0 0% 100% / 0.055), hsl(0 0% 100% / 0.016)),
     hsl(var(--heroui-content2) / 0.68) !important;
@@ -356,9 +270,20 @@ button[data-slot='trigger'] {
 }
 
 [data-slot='input-wrapper']:focus-within,
-button[data-slot='trigger'][data-open='true'] {
+[data-slot='trigger'][data-open='true'] {
   border-color: hsl(var(--heroui-primary) / 0.62) !important;
   box-shadow: 0 0 0 2px hsl(var(--heroui-primary) / 0.18) !important;
+}
+
+[data-slot='trigger'].bg-yellow-400.text-black {
+  background: #facc15 !important;
+  color: #000 !important;
+}
+
+[data-slot='trigger'].bg-yellow-400.text-black:hover,
+[data-slot='trigger'].bg-yellow-400.text-black[data-open='true'] {
+  background: #eab308 !important;
+  color: #000 !important;
 }
 
 button[data-slot='trigger'].bg-primary:not(:disabled):not([aria-disabled='true']):not([data-disabled='true']) {
