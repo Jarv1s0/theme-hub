@@ -34,8 +34,42 @@
   --heroui-primary-foreground: 0 0% 100%;
   --heroui-focus: 205 88% 46%;
 
+  --heroui-success-50: 164 64% 96%;
+  --heroui-success-100: 164 64% 90%;
+  --heroui-success-200: 164 64% 80%;
+  --heroui-success-300: 164 64% 70%;
+  --heroui-success-400: 164 64% 50%;
+  --heroui-success-500: 164 64% 45%;
+  --heroui-success-600: 164 64% 38%;
+  --heroui-success-700: 164 64% 30%;
+  --heroui-success-800: 164 64% 20%;
+  --heroui-success-900: 164 64% 10%;
   --heroui-success: 164 64% 38%;
+  --heroui-success-foreground: 0 0% 100%;
+
+  --heroui-warning-50: 38 86% 96%;
+  --heroui-warning-100: 38 86% 90%;
+  --heroui-warning-200: 38 86% 80%;
+  --heroui-warning-300: 38 86% 70%;
+  --heroui-warning-400: 38 86% 60%;
+  --heroui-warning-500: 38 86% 50%;
+  --heroui-warning-600: 38 86% 40%;
+  --heroui-warning-700: 38 86% 30%;
+  --heroui-warning-800: 38 86% 20%;
+  --heroui-warning-900: 38 86% 10%;
   --heroui-warning: 38 86% 50%;
+  --heroui-warning-foreground: 0 0% 0%;
+
+  --heroui-danger-50: 4 58% 96%;
+  --heroui-danger-100: 4 58% 90%;
+  --heroui-danger-200: 4 58% 80%;
+  --heroui-danger-300: 4 58% 70%;
+  --heroui-danger-400: 4 58% 60%;
+  --heroui-danger-500: 4 58% 52%;
+  --heroui-danger-600: 4 58% 45%;
+  --heroui-danger-700: 4 58% 35%;
+  --heroui-danger-800: 4 58% 25%;
+  --heroui-danger-900: 4 58% 15%;
   --heroui-danger: 4 58% 52%;
   --heroui-danger-foreground: 0 0% 100%;
 
@@ -76,8 +110,42 @@
   --heroui-primary-foreground: 222 36% 9%;
   --heroui-focus: 204 88% 58%;
 
+  --heroui-success-50: 166 58% 10%;
+  --heroui-success-100: 166 58% 15%;
+  --heroui-success-200: 166 58% 25%;
+  --heroui-success-300: 166 58% 35%;
+  --heroui-success-400: 166 58% 45%;
+  --heroui-success-500: 166 58% 48%;
+  --heroui-success-600: 166 58% 55%;
+  --heroui-success-700: 166 58% 65%;
+  --heroui-success-800: 166 58% 75%;
+  --heroui-success-900: 166 58% 85%;
   --heroui-success: 166 58% 48%;
+  --heroui-success-foreground: 0 0% 0%;
+
+  --heroui-warning-50: 40 82% 10%;
+  --heroui-warning-100: 40 82% 15%;
+  --heroui-warning-200: 40 82% 25%;
+  --heroui-warning-300: 40 82% 35%;
+  --heroui-warning-400: 40 82% 45%;
+  --heroui-warning-500: 40 82% 58%;
+  --heroui-warning-600: 40 82% 65%;
+  --heroui-warning-700: 40 82% 75%;
+  --heroui-warning-800: 40 82% 85%;
+  --heroui-warning-900: 40 82% 95%;
   --heroui-warning: 40 82% 58%;
+  --heroui-warning-foreground: 0 0% 0%;
+
+  --heroui-danger-50: 4 42% 10%;
+  --heroui-danger-100: 4 42% 15%;
+  --heroui-danger-200: 4 42% 25%;
+  --heroui-danger-300: 4 42% 35%;
+  --heroui-danger-400: 4 42% 45%;
+  --heroui-danger-500: 4 42% 58%;
+  --heroui-danger-600: 4 42% 65%;
+  --heroui-danger-700: 4 42% 75%;
+  --heroui-danger-800: 4 42% 85%;
+  --heroui-danger-900: 4 42% 95%;
   --heroui-danger: 4 42% 58%;
   --heroui-danger-foreground: 0 0% 98%;
 
